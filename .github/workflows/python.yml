@@ -26,3 +26,15 @@ jobs:
       run: |
         coverage run -m unittest discover 
         coverage report
+    - name: Install PyInstaller
+      run: pip install pyinstaller
+
+    - name: Build executable
+      run: pyinstaller --onefile main.py
+
+    - name: Upload built file
+      uses: actions/upload-artifact@v3
+      with:
+        name: japan-planner-cli
+        path: dist/main
+
