@@ -13,7 +13,7 @@ def rank_activities(all_activities):
     print(f"Here is the flat list {flat_list}" )
     count = Counter(flat_list)
     print(f"Here is the count {count}")
-    rank =sorted(count.items(), key=lambda x: -x[1])
+    rank =sorted(count.items(), key=lambda x: (-x[1] , x[0]))
     print("HERE IS THE RANK",rank)
 
     score_map = {}

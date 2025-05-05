@@ -1,3 +1,6 @@
+#Author: Sebastian Andrade
+#Due: 05/06/2025
+#Description: A planner for my trip to Japan.
 from planner import rank_activities
 def main():
     NUM_PEOPLE = 3
