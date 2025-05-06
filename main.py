@@ -16,7 +16,7 @@ def main():
                                                                                                                                     
 """ )
     print("Welcome to the Japan Activity Planner! This program was created to prioritize the most popular activies to do in Japan.")
-    print(f"Please insert {ACTIVITIES_PER_PERSON} activities you would want to do in Japan.")
+    print(f"Please insert {ACTIVITIES_PER_PERSON} activities you would want to do in Japan. Please!")
     for i in range(1,NUM_PEOPLE + 1): # Loops hree times for three peaople
         print(f"Person {i}, enter your activities now.")
         user_activities = []
